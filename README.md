@@ -1,6 +1,3 @@
-================================================
-FILE: README.md
-================================================
 # Cloudify Weather
 
 Cloudify is a browser-based weather dashboard built with React and TypeScript. It combines current conditions, hourly and daily forecasts, and air-quality data for a searched or current location. Weather data comes from public APIs; the app does not require a Cloudify account or API key.
@@ -80,10 +77,6 @@ The repository includes Vitest unit tests for AQI interpretation, unit conversio
 No license file is currently included. Add a `LICENSE` file before describing this repository as open source or granting reuse rights.
 
 
-
-================================================
-FILE: ARCHITECTURE.md
-================================================
 # Cloudify Architecture
 
 ## 1. System overview
@@ -196,10 +189,8 @@ npm run preview
 - Add a repository license, deployment instructions, and any provider-specific attribution required for the intended publication model before publishing.
 
 
-
-================================================
 FILE: index.html
-================================================
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -221,9 +212,8 @@ FILE: index.html
 
 
 
-================================================
 FILE: package.json
-================================================
+
 {
   "name": "cloudify",
   "private": true,
@@ -259,9 +249,9 @@ FILE: package.json
 
 
 
-================================================
+
 FILE: postcss.config.js
-================================================
+
 export default {
   plugins: {
     tailwindcss: {},
@@ -271,18 +261,18 @@ export default {
 
 
 
-================================================
+
 FILE: run.bat
-================================================
+
 @echo off
 setlocal enabledelayedexpansion
 title Cloudify - Weather Forecast App
 
 cd /d "%~dp0"
 
-echo ========================================================
+echo 
 echo   Starting Cloudify Weather Forecast Web App...
-echo ========================================================
+echo 
 echo.
 
 :: Check if node is in PATH, otherwise append known installation paths
@@ -335,17 +325,17 @@ if %ERRORLEVEL% neq 0 (
 
 
 
-================================================
+
 FILE: start.cmd
-================================================
+
 @echo off
 call "%~dp0run.bat"
 
 
 
-================================================
+
 FILE: tailwind.config.js
-================================================
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -394,9 +384,9 @@ export default {
 
 
 
-================================================
+
 FILE: tsconfig.json
-================================================
+
 {
   "compilerOptions": {
     "target": "ES2020",
@@ -421,9 +411,9 @@ FILE: tsconfig.json
 
 
 
-================================================
+
 FILE: tsconfig.node.json
-================================================
+
 {
   "compilerOptions": {
     "composite": true,
@@ -437,9 +427,8 @@ FILE: tsconfig.node.json
 
 
 
-================================================
 FILE: vite.config.ts
-================================================
+
 /// <reference types="vitest" />
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
